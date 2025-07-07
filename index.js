@@ -1,7 +1,7 @@
 /**
- * ESPN WNBA Fantasy API
+ * ESPN Fantasy WNBA API
  * 
- * The first and only public API for ESPN's WNBA Fantasy Basketball.
+ * The first and only public API for ESPN's Fantasy WNBA.
  * Reverse-engineered from ESPN's internal endpoints.
  * 
  * Base URL: https://lm-api-reads.fantasy.espn.com/apis/v3/games/wfba
@@ -24,7 +24,7 @@
      async request(endpoint) {
          const headers = {
              'Accept': 'application/json',
-             'User-Agent': 'ESPN-WNBA-Fantasy-API'
+             'User-Agent': 'ESPN-Fantasy-WNBA-API'
          };
  
          if (this.espnS2 && this.swid) {

@@ -1,19 +1,19 @@
-# ESPN WNBA Fantasy API
+# ESPN Fantasy WNBA API
 
-> The first and only public API for ESPN's WNBA Fantasy Basketball
+> The first and only public API for ESPN's Fantasy WNBA
 
-This library provides access to ESPN's internal WNBA Fantasy Basketball endpoints, reverse-engineered and documented for public use.
+This library provides access to ESPN's internal Fantasy WNBA endpoints, reverse-engineered and documented for public use.
 
 ## Installation
 
-```
-npm install espn-wnba-fantasy-api
+```bash
+npm install espn-fantasy-wnba-api
 ```
 
 ## Quick Start
 
-```
-import ESPNWNBAFantasyAPI from 'espn-wnba-fantasy-api';
+```javascript
+import ESPNWNBAFantasyAPI from 'espn-fantasy-wnba-api';
 
 // Public data (no authentication)
 const api = new ESPNWNBAFantasyAPI();
@@ -52,7 +52,7 @@ For private league data, you need ESPN authentication cookies:
 
 ## Example: Get Team Rosters
 
-```
+```javascript
 const api = new ESPNWNBAFantasyAPI({
     espnS2: 'your_cookie',
     swid: 'your_swid'
@@ -71,7 +71,7 @@ rosters.forEach(team => {
 
 ## Discovered Endpoints
 
-This API exposes ESPN's internal WNBA fantasy endpoints. All discovered endpoints are documented in the source code for developers who want to expand functionality.
+This API exposes ESPN's internal Fantasy WNBA endpoints. All discovered endpoints are documented in the source code for developers who want to expand functionality.
 
 **Base URL:** `https://lm-api-reads.fantasy.espn.com/apis/v3/games/wfba`
 

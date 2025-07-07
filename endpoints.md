@@ -1,6 +1,6 @@
-# ESPN WNBA Fantasy API Endpoints
+# ESPN Fantasy WNBA API Endpoints
 
-> Complete reference of discovered ESPN WNBA Fantasy endpoints for developers
+> Complete reference of discovered ESPN Fantasy WNBA endpoints for developers
 
 **Base URL:** `https://lm-api-reads.fantasy.espn.com/apis/v3/games/wfba`
 
@@ -115,6 +115,6 @@ ESPN may rate limit requests. Use reasonable delays between calls to avoid being
 
 ## Discovery Notes
 
-These endpoints were discovered through reverse engineering ESPN's WNBA Fantasy Basketball web application. This represents the complete set of known endpoints as of 2025.
+These endpoints were discovered through reverse engineering ESPN's Fantasy WNBA web application. This represents the complete set of known endpoints as of 2025.
 
-The WNBA fantasy system uses the game code `wfba` rather than the expected `fwb`, which was a key discovery in accessing these endpoints.
+The Fantasy WNBA system uses the game code `wfba` rather than the expected `fwb`, which was a key discovery in accessing these endpoints.

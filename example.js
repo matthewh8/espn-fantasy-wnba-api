@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * ESPN WNBA Fantasy API - Usage Example
+ * ESPN Fantasy WNBA API - Usage Example
  * 
  * Simple example showing how to use the API to get team rosters
  */
@@ -16,7 +16,7 @@
  };
  
  async function main() {
-     console.log('🏀 ESPN WNBA Fantasy API Example\n');
+     console.log('🏀 ESPN Fantasy WNBA API Example\n');
      
      // Check if config is filled in
      if (CONFIG.espnS2.includes('YOUR_')) {
