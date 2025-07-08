@@ -4,10 +4,21 @@
 
 This library provides access to ESPN's internal Fantasy WNBA endpoints, reverse-engineered and documented for public use.
 
-## Installation
+## Prerequisites
+
+This package is designed for Node.js environments and requires:
 
 ```bash
-npm install espn-fantasy-wnba-api
+npm install node-fetch  # Required dependency
+```
+
+## Installation
+
+Since this package isn't published to npm yet, install directly from GitHub:
+
+```bash
+npm install matthewh8/espn-fantasy-wnba-api
+npm install node-fetch  # Required dependency
 ```
 
 ## Quick Start
@@ -25,14 +36,14 @@ const privateApi = new ESPNWNBAFantasyAPI({
     swid: 'your_swid_cookie'
 });
 
-const rosters = await privateApi.getLeagueRosters('your_league_id');
+const rosters = await privateApi.getLeagueRosters('YOUR_LEAGUE_ID_HERE');
 ```
 
 ## Authentication
 
 For private league data, you need ESPN authentication cookies:
 
-1. Go to ESPN Fantasy Basketball in your browser
+1. Go to ESPN Fantasy WNBA in your browser
 2. Open DevTools (F12) → Application → Cookies → espn.com  
 3. Copy `espn_s2` and `SWID` values
 
@@ -58,7 +69,7 @@ const api = new ESPNWNBAFantasyAPI({
     swid: 'your_swid'
 });
 
-const data = await api.getLeagueRosters('1683551689');
+const data = await api.getLeagueRosters('YOUR_LEAGUE_ID_HERE');
 const rosters = api.extractRosters(data);
 
 rosters.forEach(team => {
@@ -69,6 +80,18 @@ rosters.forEach(team => {
 });
 ```
 
+## Troubleshooting
+
+**Common Issues:**
+
+- **"fetch is not defined"** - Make sure you've installed `node-fetch`
+- **401 Unauthorized** - Check that your ESPN cookies are valid and not expired
+- **Module not found** - Ensure you're using Node.js 14+ with ES modules support
+
+**Getting Your League ID:**
+Your league ID can be found in the URL when viewing your ESPN Fantasy WNBA league:
+`https://fantasy.espn.com/basketball/league?leagueId=YOUR_LEAGUE_ID_HERE`
+
 ## Discovered Endpoints
 
 This API exposes ESPN's internal Fantasy WNBA endpoints. All discovered endpoints are documented in the source code for developers who want to expand functionality.
@@ -76,6 +99,12 @@ This API exposes ESPN's internal Fantasy WNBA endpoints. All discovered endpoint
 **Base URL:** `https://lm-api-reads.fantasy.espn.com/apis/v3/games/wfba`
 
 **Game Code:** `wfba` (Women's Fantasy Basketball Association)
+
+## Environment Support
+
+- **Node.js**: 14.0.0 or higher
+- **ES Modules**: Required
+- **Browser**: Not supported (due to CORS restrictions)
 
 ## Contributing
 
