@@ -9,16 +9,15 @@ This library provides access to ESPN's internal Fantasy WNBA endpoints, reverse-
 This package is designed for Node.js environments and requires:
 
 ```bash
-npm install node-fetch  # Required dependency
+npm install node-fetch
 ```
 
 ## Installation
 
-Since this package isn't published to npm yet, install directly from GitHub:
 
 ```bash
-npm install matthewh8/espn-fantasy-wnba-api
-npm install node-fetch  # Required dependency
+npm install espn-fantasy-wnba-api
+npm install node-fetch
 ```
 
 ## Quick Start
