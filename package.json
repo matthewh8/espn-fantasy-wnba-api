@@ -1,11 +1,12 @@
 {
     "name": "espn-fantasy-wnba-api",
     "version": "2.0.0",
-    "description": "The first and only public API for ESPN's Fantasy WNBA",
+    "description": "The first and only public API for ESPN's Fantasy WNBA - reverse-engineered endpoints for fantasy league data",
     "type": "module",
     "main": "index.js",
     "scripts": {
-      "test": "node example.js"
+      "test": "node example.js",
+      "start": "node example.js"
     },
     "keywords": [
       "fantasy",
@@ -13,13 +14,19 @@
       "basketball",
       "espn",
       "api",
-      "sports"
+      "sports",
+      "fantasy-sports",
+      "fantasy-basketball"
     ],
-    "author": "Your Name",
+    "author": "Matthew Hong <matthewlhong@gmail.com>",
     "license": "MIT",
     "repository": {
       "type": "git",
-      "url": "https://github.com/yourusername/espn-fantasy-wnba-api.git"
+      "url": "https://github.com/matthewh8/espn-fantasy-wnba-api.git"
+    },
+    "homepage": "https://github.com/matthewh8/espn-fantasy-wnba-api#readme",
+    "bugs": {
+      "url": "https://github.com/matthewh8/espn-fantasy-wnba-api/issues"
     },
     "dependencies": {
       "node-fetch": "^3.3.2"
