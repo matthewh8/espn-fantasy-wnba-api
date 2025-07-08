@@ -104,7 +104,6 @@ This API exposes ESPN's internal Fantasy WNBA endpoints. All discovered endpoint
 
 - **Node.js**: 14.0.0 or higher
 - **ES Modules**: Required
-- **Browser**: Not supported (due to CORS restrictions)
 
 ## Contributing
 
