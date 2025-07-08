@@ -17,7 +17,6 @@ npm install node-fetch
 
 ```bash
 npm install espn-fantasy-wnba-api
-npm install node-fetch
 ```
 
 ## Quick Start
